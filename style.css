@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#clock-area {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    background: antiquewhite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    height: 99vh;
+    width: 98%;
+    overflow: scroll;
+}
+
+
+.text2 {
+    margin-bottom: 32px;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    height: 70px;
+    background: black;
+    width: 42vw;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#back-video {
+    position: relative;
+}
+
+#hrs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    background: black;
+    height: 21vh;
+    width: 151px;
+    border-radius: 8px;
+}
+
+#mins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 21vh;
+    width: 151px;
+    border-radius: 8px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+#clock-area span {
+    font-size: 5rem;
+    margin: 0 13px;
+    color: white;
+}
+
+#secs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 21vh;
+    width: 151px;
+    border-radius: 8px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+#status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 21vh;
+    width: 151px;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: 8px;
+    font-size: 3rem;
+    color: white;
+}
+
+#date-sec {
+    margin-top: 14px;
+    color: white;
+}
+
+#cur-date {
+    display: flex;
+    justify-content: center;
+}
+
+#cur-date span {
+    margin: 0 5px;
+    color: white;
+    font-size: 26px;
+}
+
+#text {
+    font-size: 22px;
+}
+
+#date {
+    margin-right: 12px;
+    font-size: 26px;
+}
+
+#weeks {
+    color: white;
+    font-size: 26px;
+}
+
+#date {
+    color: white;
+    font-size: 26px;
+}
+
+#month {
+    color: white;
+    font-size: 26px;
+}
+
+.blink2 {
+    visibility: hidden;
+}
+
+.blip {
+    color: white;
+}
+
+/* Reponsive */
+
+@media screen and (max-width: 1028px) {
+
+    #hrs {
+        height: 122px;
+        width: 122px;
+    }
+
+    #mins {
+        height: 122px;
+        width: 122px;
+    }
+
+    #secs {
+        height: 122px;
+        width: 122px;
+    }
+
+    #status {
+        height: 122px;
+        width: 122px;
+    }
+
+    .text2 {
+        width: 93vw;
+    }
+
+
+    .imgtag {
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 649px) {
+
+
+    #hrs {
+        height: 84px;
+        width: 84px;
+        font-size: 21px;
+    }
+
+    #mins {
+        height: 84px;
+        width: 84px;
+        font-size: 21px;
+    }
+
+    #secs {
+        height: 84px;
+        width: 84px;
+        font-size: 21px;
+    }
+
+    #status {
+        height: 84px;
+        width: 84px;
+        font-size: 40px;
+    }
+
+    
+}
+
+@media screen and (max-width : 460px) {
+
+
+    #container {
+        height: 99vh;
+    }
+
+    .text2 {
+        width: 59vw;
+        font-size: 17px;
+    }
+
+    #hrs {
+        height: 91px;
+        width: 90px;
+    }
+
+    #mins {
+        height: 91px;
+        width: 90px;
+    }
+
+    #secs {
+        height: 91px;
+        width: 90px;
+    }
+
+    #status {
+        height: 91px;
+        width: 90px;
+    }
+
+
+
+    #clock-area span {
+        font-size: 33px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 492px) {
+
+
+    #clock-area {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    #text {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .text2 {
+        text-align: center;
+        margin-top: 6px
+    }
+
+    #clock-area span {
+        display: none;
+    }
+
+    #hrs {
+        height: 91px;
+        width: 179px;
+    }
+
+    #mins {
+        height: 91px;
+        width: 179px;
+    }
+
+    #secs {
+        height: 91px;
+        width: 179px;
+    }
+
+    #status {
+        height: 91px;
+        width: 179px;
+        margin-right: 7px;
+    }
+
+    #weeks {
+        font-size: 16px;
+    }
+
+    #date {
+        font-size: 16px;
+    }
+
+    #month {
+        font-size: 16px;
+    }
+
+
+}
